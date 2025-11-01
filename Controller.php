@@ -1,3 +1,4 @@
+<?php 
 public function config(){
 $data = $this->input->post();
 //// bla bla bla code
@@ -6,7 +7,7 @@ else if($data['config']==='getrekapppsserverside'){
         $start = $_POST['start'];
         $length = $_POST['length'];
         $order = $_POST['order'];
-        $column_order = ['','no_laporan','bulan','status_spt','billing','tanggal_bayar','tanggal_lapor'];
+        $column_order = ['','no_laporan','bulan','status_spt','billing','tanggal_bayar','tanggal_lapor']; //kolom-kolom , di ujung empty string karena nomor doang.
         $order_column = $column_order[$order[0]['column']];
         $order_dir = $order[0]['dir'];
 
